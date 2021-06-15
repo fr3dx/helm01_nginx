@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: chartx
+  name: chartx
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: chartx
+  template:
+    metadata:
+      labels:
+        app: chartx
+    spec:
+      containers:
+      - image: nginx
+        name: nginx

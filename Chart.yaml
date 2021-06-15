@@ -1,0 +1,6 @@
+apiVersion: v1
+name: chartx
+version: 0.0.1
+appVersion: 0.0.1
+description: Custom chart from fr3dx
+
